@@ -4,6 +4,13 @@
 
 The purpose of the project is to experiment the SlowITe attack on MQTT
 
+## normal functioning of MQTT
+
+### Subscriber
+`mosquitto_sub -h <IP address> -t <topic>`
+### publisher
+`mosquitto_pub -h <IP address> -t <topic> -m "message"`
+
 ## Prerequisites
 
 First of all, you have to type the following line on your shell in order to install and manage the other software packages, written in Python, used in this project (for more info click [here](https://linuxize.com/post/how-to-install-pip-on-ubuntu-18.04/)).
