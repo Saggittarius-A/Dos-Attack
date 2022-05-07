@@ -51,3 +51,31 @@ $ python3 MQTT_SlowDoS.py -a broker_address [-p broker_port] [-k keep_alive] [-h
 | -a             | IP address of the MQTT broker (mandatory flag) | 
 | -p             | Port of the MQTT broker (default: 1883) | 
 | -k             | Keep-Alive parameter used in the MQTT protocol (default: 60 sec) | 
+
+
+## Run the code
+`____________command to change the config file`<br>
+Add the following lines and save it <br>
+`allow_anonymous true`<br>
+`listener 1883`<br>
+
+Now run the code from the command given above
+
+## Testing code
+### Case 1
+Edit the config file to add `log_dest topic`
+Then save the file and reboot system <br>
+
+Subscribe and publish to the broker using the following commands<br>
+`_________________`<br>
+`_________________`<br>
+Now you will be able to see each clients deatails while they are trying to connect to the broker in real time.
+Making attack possible in this scenerio
+
+### Case 2
+For authentication add the following lines in configuration file<br>
+`allow_anonymous true`<br>
+`__________________`<br>
+now try to execute the attack. It wont be able to stop the broker because of the authentication
+
+## Prevention
