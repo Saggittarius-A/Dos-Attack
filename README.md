@@ -63,7 +63,7 @@ Now run the code from the command given above
 
 ## Testing code
 
-### Making configuration changes only on broker[here considering broker as raspberrypi]
+### Making configuration changes only on broker[here considering broker as raspberrypi]. And rebooting means to reboot the system on which mqtt broker install on.
 
 ### Case 1
 Go inside config by `sudo nano /etc/mosquitto/mosquitto.conf`<br>
