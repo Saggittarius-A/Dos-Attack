@@ -62,6 +62,9 @@ Add the following lines and save it <br>
 Now run the code from the command given above
 
 ## Testing code
+
+### Making configuration changes only on broker[here considering broker as raspberrypi]
+
 ### Case 1
 Go inside config by `sudo nano /etc/mosquitto/mosquitto.conf`<br>
 Edit the config file to add `log_dest topic` and `log_dest syslog`<br>
@@ -77,7 +80,7 @@ Now you will be able to see each clients details while they are trying to connec
 Start attack in this scenerio and observe. There will be so many clients creation with the same ip address simultaniously. This way you can check if broker is under attack or not.
 
 ### Case 2
-For authentication add the following lines in configuration file<br>
+For authentication add the following lines in configuration file of broker here it is raspberrypi<br>
 `allow_anonymous false`<br>
 `mosquitto_passwd -c /etc/mosquitto/pwfile`<br>
 
