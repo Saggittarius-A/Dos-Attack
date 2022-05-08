@@ -2,7 +2,7 @@
 
 ## Idea of the project
 
-The purpose of the project is to experiment the SlowITe attack on MQTT
+The purpose of the project is to experiment the SlowITe attack on MQTT broker on raspberrypi.
 
 ## normal functioning of MQTT
 
